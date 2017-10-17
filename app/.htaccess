@@ -1,4 +1,4 @@
-DirectoryIndex main.php
+DirectoryIndex full-product.php
 
 ## EXPIRES CACHING ##
 <IfModule mod_expires.c>

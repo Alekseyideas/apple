@@ -1,14 +1,23 @@
 @font-face {
-  font-family: "roboto";
-  font-style: normal;
+  font-family: 'apercu_pro';
+  src: url("../../fonts/apercu/ApercuPro.eot"), url("../../fonts/apercu/ApercuPro.ttf"), url("../../fonts/apercu/ApercuPro.svg"), url("../../fonts/apercu/ApercuPro.woff");
   font-weight: normal;
-  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype"); }
+  font-style: normal; }
 
 @font-face {
-  font-family: "roboto";
-  font-style: normal;
+  font-family: 'apercu_pro-bold';
+  src: url("../../fonts/apercu/ApercuPro-Bold.eot"), url("../../fonts/apercu/ApercuPro-Bold.ttf"), url("../../fonts/apercu/ApercuPro-Bold.svg"), url("../../fonts/apercu/ApercuPro-Bold.woff");
   font-weight: bold;
-  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype"); }
+  font-style: normal; }
+
+@font-face {
+  font-family: 'apercu_pro-light';
+  src: url("../../fonts/apercu/ApercuPro-Light.eot"), url("../../fonts/apercu/ApercuPro-Light.ttf"), url("../../fonts/apercu/ApercuPro-Light.svg"), url("../../fonts/apercu/ApercuPro-Light.woff");
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  font-family: apercu_pro, "sans-serif"; }
 
 .flex {
   display: -webkit-box;
@@ -65,33 +74,109 @@ img {
   width: 100%;
   display: block; }
 
+.link {
+  text-decoration: none;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s; }
+  .link--white {
+    color: white; }
+    .link--white:hover {
+      color: #00a4e0; }
+  .link--header-btn {
+    color: white;
+    background: #2b2b2b;
+    -webkit-border-radius: 50px;
+            border-radius: 50px;
+    padding: 10px 20px; }
+    .link--header-btn:hover {
+      background: #00a4e0; }
+  .link:hover {
+    text-decoration: none; }
+
 .header {
   background: black;
-  padding: 10px 0;
+  padding: 0 0;
   position: relative;
-  height: 63px; }
+  height: 63px;
+  z-index: 2; }
+  .header__logo-menu {
+    background: black; }
   .header .col-md-8 {
     position: inherit; }
   .header__logo {
     display: block;
     -webkit-transition: .2s;
     -o-transition: .2s;
-    transition: .2s;
-    margin-right: 20px; }
+    transition: .2s; }
     .header__logo img {
       width: 43px; }
     .header__logo:hover {
       opacity: .5; }
-  .header__menu-item {
-    margin-right: 70px; }
-    .header__menu-item a {
-      color: white; }
   .header__subMenu {
     position: absolute;
     top: 100%;
     width: 100%;
     left: 0;
-    background: #141414; }
+    background: #141414;
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: .7s;
+    -o-transition: .7s;
+    transition: .7s;
+    padding-left: 0; }
+    .header__subMenu .header__menu-item {
+      padding: 0;
+      margin-top: 20px;
+      margin-right: 70px; }
+  .header__menu-item {
+    padding: 21px 35px; }
+    .header__menu-item a {
+      color: white; }
+    .header__menu-item:hover .header__subMenu {
+      height: 60px;
+      padding-left: 0; }
+
+.full-product {
+  margin-top: 30px; }
+  .full-product__image {
+    width: 100%;
+    text-align: center;
+    border: 1px solid #e8e8e8;
+    padding: 20px 0;
+    cursor: pointer; }
+    .full-product__image img {
+      margin: auto;
+      display: block; }
+  .full-product__prevs {
+    margin-top: 20px;
+    padding: 20px 0; }
+  .full-product__prev-item {
+    width: 105px;
+    height: 106px;
+    margin: 10px 0;
+    border: 1px solid #e8e8e8;
+    cursor: pointer; }
+    .full-product__prev-item:hover {
+      border: 1px solid #00a4e0; }
+  .full-product__title {
+    font-family: apercu_pro-bold, "sans-serif";
+    font-size: 30px;
+    margin: 0; }
+  .full-product__stars {
+    color: #fac917;
+    font-size: 18px; }
+    .full-product__stars i {
+      margin-right: 2px; }
+  .full-product__comment-count {
+    cursor: pointer;
+    color: #00a4e0;
+    font-size: 18px;
+    margin: 0 0 0 40px; }
+    .full-product__comment-count:hover {
+      color: #007fad; }
+  .full-product__stars-comment {
+    margin-top: 10px; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */

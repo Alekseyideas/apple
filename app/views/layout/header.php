@@ -15,6 +15,8 @@
     <meta name="msapplication-config" content="img/favicons/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/stylesheet.css?<?echo  rand()?>">
 </head>
 <body>
@@ -22,128 +24,129 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8">
-                <div class="flex flex--a-center">
+                <div class="flex flex--a-center header__logo-menu">
                     <a href="/" class="header__logo">
                         <img src="img/logos/logo.svg" alt="logo">
                     </a>
-                    <nav>
+                    <nav class="hidden-xs hidden-sm">
                         <div class="header__menu">
                             <div class="flex flex--a-center">
                                 <div class="header__menu-item">
-                                    <a href="#">Iphone</a>
+                                    <a href="#" class="link link--white">Iphone</a>
                                     <div class="header__subMenu">
                                         <div class="container">
                                             <div class="flex">
                                                 <div class="header__menu-item">
-                                                    <a href="#">Iphone 6</a>
+                                                    <a href="#" class="link link--white">Iphone 6</a>
                                                 </div>
                                                 <div class="header__menu-item">
-                                                    <a href="#">Iphone 6s</a>
+                                                    <a href="#" class="link link--white">Iphone 6s</a>
                                                 </div>
                                                 <div class="header__menu-item">
-                                                    <a href="#">Iphone 7</a>
+                                                    <a href="#" class="link link--white">Iphone 7</a>
                                                 </div>
                                                 <div class="header__menu-item">
-                                                    <a href="#">Iphone 7+</a>
+                                                    <a href="#" class="link link--white">Iphone 7+</a>
                                                 </div>
                                                 <div class="header__menu-item">
-                                                    <a href="#">Iphone 8</a>
+                                                    <a href="#" class="link link--white">Iphone 8</a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="header__menu-item">
-                                    <a href="#">Ipad</a>
+                                    <a href="#" class="link link--white">Ipad</a>
                                     <div class="header__subMenu">
                                         <div class="container">
                                             <div class="flex">
                                                 <div class="header__menu-item">
-                                                    <a href="#">Iphone 6</a>
+                                                    <a href="#" class="link link--white">Ipad</a>
                                                 </div>
                                                 <div class="header__menu-item">
-                                                    <a href="#">Iphone 6s</a>
+                                                    <a href="#" class="link link--white">Ipad</a>
                                                 </div>
                                                 <div class="header__menu-item">
-                                                    <a href="#">Iphone 7</a>
+                                                    <a href="#" class="link link--white">Ipad</a>
                                                 </div>
                                                 <div class="header__menu-item">
-                                                    <a href="#">Iphone 7+</a>
+                                                    <a href="#" class="link link--white">Ipad</a>
                                                 </div>
                                                 <div class="header__menu-item">
-                                                    <a href="#">Iphone 8</a>
+                                                    <a href="#" class="link link--white">Ipad</a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="header__menu-item">
-                                    <a href="#">Mackbook</a>
+                                    <a href="#" class="link link--white">Mackbook</a>
                                     <div class="header__subMenu">
                                         <div class="container">
                                             <div class="flex">
                                                 <div class="header__menu-item">
-                                                    <a href="#">Iphone 6</a>
+                                                    <a href="#" class="link link--white">Iphone 6</a>
                                                 </div>
                                                 <div class="header__menu-item">
-                                                    <a href="#">Iphone 6s</a>
+                                                    <a href="#" class="link link--white">Iphone 6s</a>
                                                 </div>
                                                 <div class="header__menu-item">
-                                                    <a href="#">Iphone 7</a>
+                                                    <a href="#" class="link link--white">Iphone 7</a>
                                                 </div>
                                                 <div class="header__menu-item">
-                                                    <a href="#">Iphone 7+</a>
+                                                    <a href="#" class="link link--white">Iphone 7+</a>
                                                 </div>
                                                 <div class="header__menu-item">
-                                                    <a href="#">Iphone 8</a>
+                                                    <a href="#" class="link link--white">Iphone 8</a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="header__menu-item">
-                                    <a href="#">Аксесcуары</a>
+                                    <a href="#" class="link link--white">Аксесcуары</a>
                                     <div class="header__subMenu">
                                         <div class="container">
                                             <div class="flex">
                                                 <div class="header__menu-item">
-                                                    <a href="#">Iphone 6</a>
+                                                    <a href="#" class="link link--white">Iphone 6</a>
                                                 </div>
                                                 <div class="header__menu-item">
-                                                    <a href="#">Iphone 6s</a>
+                                                    <a href="#" class="link link--white">Iphone 6s</a>
                                                 </div>
                                                 <div class="header__menu-item">
-                                                    <a href="#">Iphone 7</a>
+                                                    <a href="#" class="link link--white">Iphone 7</a>
                                                 </div>
                                                 <div class="header__menu-item">
-                                                    <a href="#">Iphone 7+</a>
+                                                    <a href="#" class="link link--white">Iphone 7+</a>
                                                 </div>
                                                 <div class="header__menu-item">
-                                                    <a href="#">Iphone 8</a>
+                                                    <a href="#" class="link link--white">Iphone 8</a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="header__menu-item">
-                                    <a href="#" class="header__menu-btn">Сервис</a>
+                                    <a href="#" class="link link--header-btn">Сервис</a>
+
                                     <div class="header__subMenu">
                                         <div class="container">
                                             <div class="flex">
                                                 <div class="header__menu-item">
-                                                    <a href="#">Iphone 6</a>
+                                                    <a href="#"class="link link--white">Iphone 6</a>
                                                 </div>
                                                 <div class="header__menu-item">
-                                                    <a href="#">Iphone 6s</a>
+                                                    <a href="#"class="link link--white">Iphone 6s</a>
                                                 </div>
                                                 <div class="header__menu-item">
-                                                    <a href="#">Iphone 7</a>
+                                                    <a href="#"class="link link--white">Iphone 7</a>
                                                 </div>
                                                 <div class="header__menu-item">
-                                                    <a href="#">Iphone 7+</a>
+                                                    <a href="#"class="link link--white">Iphone 7+</a>
                                                 </div>
                                                 <div class="header__menu-item">
-                                                    <a href="#">Iphone 8</a>
+                                                    <a href="#"class="link link--white">Iphone 8</a>
                                                 </div>
                                             </div>
                                         </div>
