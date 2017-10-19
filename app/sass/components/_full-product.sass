@@ -1,5 +1,7 @@
 .full-product
-  margin-top: 30px
+  margin-top: 0
+  .breadcrumbs
+    margin-bottom: 0
   &__image
     width: 100%
     text-align: center
@@ -30,6 +32,9 @@
     font-size: 18px
     i
       margin-right: 2px
+    .fa-star
+      &--gray
+        color: lightgrey
   &__comment-count
     cursor: pointer
     color: $blue
@@ -39,3 +44,191 @@
       color: darken($blue,10)
   &__stars-comment
     margin-top: 10px
+  &__ColorVersion
+    &-name
+      font-size: 20px
+      margin-top: 20px
+      margin-bottom: 5px
+  &__Color
+    &Select
+      display: block
+      width: 30px
+      height: 30px
+      cursor: pointer
+      margin-right: 10px
+      &--pink
+        border: 1px solid #fca1dd
+        background: #fca1dd
+      &--white
+        border: 1px solid lightgrey
+        background: white
+      &--black
+        border: 1px solid black
+        background: black
+  &__Version
+    &Select
+      display: block
+      width: 70px
+      height: 30px
+      text-align: center
+      line-height: 30px
+      border: 1px solid lightgrey
+      margin-right: 5px
+      cursor: pointer
+      &.active
+        background: black
+        color: white
+        border: 0
+        &:hover
+          background: black
+          color: white
+          border: 0
+      &:hover
+        border: 1px solid $blue
+        color: $blue
+  &__customMoreLessVal
+    display: block
+    width: 46px
+    height: 38px
+    background: none
+    border: 1px solid lightgrey
+    border-radius: 0
+    text-align: center
+    line-height: 38px
+    font-size: 26px
+  &__btnMoreLess
+    line-height: 0
+    outline: 0
+    &--less
+      border-right: 0
+    &--more
+      border-left: 0
+    &:hover
+      background: $blue
+      color: white
+      border: 1px solid $blue
+    &:focus
+      outline: 0
+  &__price
+    font-size: 40px
+    margin-top: 30px
+    font-family: $Apercu-Bold
+    &Currency
+      font-family: $Apercu
+      font-size: .8em
+      margin-bottom: 5px
+      margin-left: 2px
+
+
+  &__shortDescription
+    &-title
+      margin-top: 20px
+      font-size: 20px
+    &-text
+      font-size: 16px
+      margin-top: 15px
+
+  &__icons
+    text-align: center
+  &__icon
+    text-align: center
+    margin: 30px
+    max-width: 170px
+    img
+      margin: auto
+      height: 37px
+      width: inherit
+    &-text
+      font-size: 16px
+      margin-top: 15px
+
+  &__comments
+    &-title
+      font-size: 20px
+    &Btns
+      margin-bottom: 20px
+      a
+        text-decoration: underline
+        font-size: 18px
+        color: $blue
+        &:hover
+          color: darken($blue,10)
+  &__comment
+    margin: 30px 0
+    &-date
+      font-size: 16px
+      margin: 0
+    &-userName
+      font-size: 18px
+      margin: 0
+    &-text
+      margin-top: 20px
+      font-size: 16px
+    .full-product__stars
+      margin-top: 10px
+
+@media only screen and (max-width : 992px)
+  .full-product
+    &__title
+      margin-bottom: 20px
+    &__wrapperColorVersionPrice
+      display: block
+    &__PriceBtn
+      display: flex
+      justify-content: space-between
+      margin-top: 40px
+    &__ColorVersion-name
+      margin-bottom: 10px
+    &__ColorVersion
+      display: flex
+      justify-content: space-between
+    &__price
+      margin: 0
+      font-size: 34px
+    &__stars-comment
+      justify-content: space-between
+    &__comment-count
+      margin-left: 0
+  .similar-products__title
+    text-align: center
+
+@media only screen and (max-width : 768px)
+  .full-product
+    &__title
+      margin-bottom: 20px
+    &__image
+      height: auto
+      margin-top: 20px
+      padding: 10px 0
+      position: relative
+    &__stars
+      display: inline-block
+
+    .full-product__comment-count
+      display: inline-block
+      margin-left: 20px
+      margin-top: -7px
+    &__ColorVersion
+      flex-direction: column
+      text-align: center
+      justify-content: center
+    &__Color
+      justify-content: center
+    &__Version
+      justify-content: center
+    &__price
+      margin-bottom: 20px
+    &__PriceBtn
+      justify-content: center
+      flex-direction: column
+
+    &__icons
+      display: none
+    &__comments
+      margin-top: 30px
+    &__commentsBtns
+      flex-direction: column
+      justify-content: center
+      text-align: center
+    .give-feedback
+      margin-top: 20px

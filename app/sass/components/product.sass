@@ -1,0 +1,48 @@
+.product
+  display: block
+  width: 100%
+  border: 1px solid lightgrey
+  height: 345px
+  margin-top: 25px
+  &__image
+    text-align: center
+    margin-top: 20px
+    display: block
+    img
+      height: 130px
+      width: auto
+      margin: auto
+  &__wrapper
+    padding: 20px
+  &__name
+    font-size: 15px
+    font-weight: bold
+    margin-top: 30px
+    display: block
+    color: black
+  &__price
+    font-size: 22px
+    font-family: $Apercu-light
+    margin-top: 20px
+    span
+      font-size: .8em
+  &__toCartFavorite
+    margin-top: 10px
+  .to_favorite
+    position: relative
+    margin-left: 10px
+    &-img
+      opacity: 1
+      transition: .2s
+      &-hover
+        position: absolute
+        top: 0
+        left: 0
+        opacity: 0
+        transition: .2s
+    &:hover
+      .to_favorite-img
+        opacity: 0
+        &-hover
+          opacity: 1
+

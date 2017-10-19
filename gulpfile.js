@@ -33,7 +33,7 @@ gulp.task('min-css',function () {
 gulp.task('browser-sync', function() {
 	browserSync({
         port: 5003,
-		proxy: "apple",
+		proxy: "appleU",
 		notify: true
 	});
 });

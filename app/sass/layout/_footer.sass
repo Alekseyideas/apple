@@ -1,0 +1,44 @@
+footer
+  margin-top: 30px
+.footer__infoBl
+  img
+    height: 40px
+@media only screen and (max-width : 992px)
+  .footer
+    &__title
+      display: none
+    &__infoBl
+      display: none
+    &__content
+      margin-top: 0px
+      padding: 0
+    &__content-logoBl
+      display: none
+    &__content-block
+      float: none
+    &__content-container
+      width: 25%  !important
+      &:last-child
+        float: none
+        margin: auto
+        text-align: center
+        width: 50%
+        &:before
+          content: ''
+          display: block
+          width: 100%
+          clear: both
+          height: 40px
+@media only screen and (max-width : 768px)
+  .footer
+    &__title-icon
+      display: none
+    &__content-container
+      width: 45%  !important
+      float: none
+      display: inline-block
+      vertical-align: top
+      margin-bottom: 30px !important
+      &:last-child
+        width: 100% !important
+

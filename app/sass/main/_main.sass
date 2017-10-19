@@ -1,5 +1,7 @@
 body
   font-family: $Apercu
+.header
+  padding: 20px 0
 .flex
   display: flex
   &--j-right
@@ -41,3 +43,148 @@ img
       background: $blue
   &:hover
     text-decoration: none
+
+.btn
+  display: block
+  &:focus
+    outline: 0 !important
+  &__top-mobile
+    font-size: 20px
+    text-align: center
+    width: 100%
+    display: block
+    border: 1px solid $blue
+    outline: 0
+    color: $blue
+    &:focus,&:active,&:hover
+      color: $blue !important
+  &--blue
+    background: $blue
+    color: white
+    transition: .2s
+    &:hover
+      background: darken($blue,10)
+      color: white
+
+  &__filter
+    width: 200px
+    height: 50px
+    border-radius: 25px
+    margin-top: 20px
+  &__toCart
+    background: none
+    border: 1px solid lightgrey
+    color: $blue
+    border-radius: 25px
+    width: 155px
+    font-size: 16px
+    height: 40px
+    transition: .2s
+    &:hover
+      background: $blue
+      color: white
+  &__buy
+    background: $blue
+    color: white
+    border-radius: 25px
+    outline: 0
+    border: 0
+    &:hover
+      background: darken($blue,10)
+      color: white
+    &:focus,
+    &:active
+      outline: 0 !important
+      color: white
+      border: 0
+    &--fullProduct
+      width: 230px
+      height: 50px
+      font-size: 26px
+      line-height: 0
+      margin: 20px auto 0
+    &OneClick
+      text-align: center
+      display: block
+      text-decoration: underline
+      font-size: 18px
+      color: $blue
+      &:hover
+        color: darken($blue,10)
+        text-decoration: underline
+.breadcrumbs
+  border: 0
+.breadcrumbs .active
+  color: black
+  font-size: 12px
+.breadcrumbs a
+  &:hover
+    text-decoration: none
+    color: $blue
+.sort-wrapper
+  margin-top: 25px
+#input-sort
+  -webkit-appearance: none
+  outline: 0
+  border: 0
+  margin-left: 20px
+  position: relative
+  padding-right: 20px
+  margin-bottom: 2px
+  cursor: pointer
+  option
+    display: block
+    background: white
+    padding: 10px 0
+    border: 0px
+    outline: 0px
+.product-sort
+  &:after
+    position: absolute
+    content: '\f107'
+    font-family: FontAwesome
+    display: block
+    height: 100%
+    width: 15px
+    background: white
+    right: 15px
+    bottom: 0
+    line-height: 35px
+    text-align: right
+  &__title
+    font-size: 20px
+
+@media only screen and (max-width : 992px)
+  body
+    overflow-x: hidden
+  .header__logo
+    float: none
+    position: absolute
+    top: 0
+    left: 50%
+    margin-left: -22px
+  .product-sort
+    justify-content: flex-start
+    width: 50%
+    position: relative
+    display: none
+  .breadcrumbs
+    margin-bottom: 20px
+
+  .btn
+    &__buy
+      &--fullProduct
+        margin: 0
+    &__toCart
+      background: $blue
+      color: white
+@media only screen and (max-width : 768px)
+  .btn
+    &__top-mobile
+      margin-bottom: 20px
+    &__buy
+      &--fullProduct
+        margin: 20px auto
+
+
+

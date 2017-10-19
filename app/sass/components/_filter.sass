@@ -1,0 +1,60 @@
+.filter-new
+  border: 1px solid #e8e8e8
+  padding: 0 20px 20px
+
+  .input__check
+    cursor: pointer
+    margin: 10px 0
+    i
+      display: none
+    &.active
+      i
+        display: block
+    &:hover
+      .input
+        &__square
+          border: 1px solid $blue
+        &__name
+          color: $blue
+  .input
+    &-row
+
+    &__square
+      display: block
+      width: 15px
+      height: 15px
+      border: 1px solid #e8e8e8
+      font-size: 12px
+      line-height: 0
+      transition: .2s
+      i
+        margin-left: 1px
+        color: $blue
+        margin-top: 1px
+    &__name
+      font-size: 16px
+      margin-left: 10px
+      transition: .2s
+
+
+
+.filter
+  &__title
+    color: $blue
+    font-size: 18px
+    margin-top: 20px
+    cursor: pointer
+    position: relative
+    &:after
+      content: '\f107'
+      font-family: FontAwesome
+      position: absolute
+      top: 3px
+      right: 0
+    &.active
+      &:after
+        content: '\f106'
+        font-family: FontAwesome
+@media only screen and (max-width : 992px)
+  .filter-new
+    display: none
